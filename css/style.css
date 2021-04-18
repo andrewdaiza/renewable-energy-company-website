@@ -67,13 +67,7 @@ h2 {
   word-spacing: 2px;
   color: var(--clr-primary-400);
 }
-h2::after {
-  display: block;
-  height: 2px;
-  background-color: #a7a7a757;
-  content: ' ';
-  width: 150px;
-}
+
 h3 {
   font-size: 120%;
   text-align: center;
@@ -382,6 +376,7 @@ footer {
   .features-icons-container div {
     width: 23.8%;
   }
+
   /* --------------PAGES------------- */
 
   #section1 {
@@ -417,7 +412,7 @@ footer {
     margin: 0 auto;
     margin-top: 3em;
   }
-  .content-2 .split {
+  .content-1 .split {
     flex-direction: row-reverse;
   }
 
