@@ -25,10 +25,10 @@ p {
   margin: 0;
 }
 
-h1,
 h2,
 h3,
 h4,
+h5,
 p {
   margin-bottom: 1em;
 }
@@ -56,7 +56,6 @@ h4,
 h5 {
   font-weight: 300;
   line-height: 1;
-  margin-bottom: 1em;
 }
 h1 {
   margin-top: 0;
@@ -73,7 +72,7 @@ h2::after {
   height: 2px;
   background-color: #a7a7a757;
   content: ' ';
-  width: 100%;
+  width: 150px;
 }
 h3 {
   font-size: 120%;
@@ -87,7 +86,7 @@ h3:after {
   content: ' ';
   width: 100%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 1em;
 }
 h4 {
   font-size: 110%;
@@ -99,7 +98,7 @@ h4 {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--clr-neutral-100);
 }
 
 img {
@@ -116,7 +115,8 @@ ion-icon {
 .split {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .text-center {
@@ -130,8 +130,8 @@ ion-icon {
 }
 
 .moreinfo-images {
-  width: 400px;
-  height: 340px;
+  width: 500px;
+  height: 300px;
 }
 
 /* --------------------------------------- */
@@ -167,8 +167,9 @@ nav a {
 }
 
 .hero-text {
-  position: absolute;
-  top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-button:link,
 .hero-button:visited {
@@ -196,13 +197,67 @@ nav a {
 }
 
 /* -------------------------------------- */
+/* --------------MORE-INFO--------------- */
+/* -------------------------------------- */
+
+.moreinfo-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    'aboutus-1'
+    'vision-2'
+    'mission-3'
+    'approach-4';
+  font-weight: 900;
+  font-size: 150%;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.aboutus-1 {
+  grid-area: aboutus-1;
+}
+.vision-2 {
+  grid-area: vision-2;
+}
+.mission-3 {
+  grid-area: mission-3;
+}
+.approach-4 {
+  grid-area: approach-4;
+}
+
+.nested-1 {
+  grid-area: 1 / 1;
+  justify-self: center;
+  align-self: center;
+}
+.nested-2 {
+  grid-area: 2 / 1;
+  justify-self: center;
+  align-self: center;
+}
+.nested-3 {
+  grid-area: 3 / 1;
+  justify-self: center;
+  align-self: center;
+}
+.nested-4 {
+  grid-area: 4 / 1;
+  justify-self: center;
+  align-self: center;
+}
+
+/* -------------------------------------- */
 /* --------------FEATURES---------------- */
 /* -------------------------------------- */
 
 .features-icons-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 100%;
   line-height: 1.4;
 }
@@ -224,7 +279,7 @@ footer {
   margin: 0em;
   color: var(--clr-neutral-100);
   padding-top: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .footer-copyright {
@@ -238,11 +293,11 @@ footer {
 }
 
 /* -------------------------------------- */
-/* ----------------ABOUT----------------- */
+/* ----------------PAGES----------------- */
 /* -------------------------------------- */
 
 .about-header {
-  background-color: var(--clr-primary-600);
+  background-color: var(--clr-primary-900);
 }
 
 /* -------------------------------------- */
@@ -250,12 +305,122 @@ footer {
 /* -------------------------------------- */
 
 @media (min-width: 50em) {
-  /* --------------MORE-INFO-------------- */
+  /* --------------RE-USEABLE------------- */
+  .split {
+    flex-direction: row;
+  }
+
+  /* ----------------HERO--------------- */
+
+  .hero-text {
+    margin-top: 1.5em;
+  }
+  h1 {
+    font-size: 400%;
+    margin-bottom: 0.2em;
+  }
+  .hero-text p {
+    font-size: 150%;
+    font-weight: 300;
+  }
+
+  .link-dropdown {
+    display: inline-block;
+  }
+
+  .link-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002d58;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .link-dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .link-dropdown-content a:hover,
+  .link-dropdown-content a:active {
+    border-bottom: 2px solid #002d58;
+    color: #fff;
+  }
+
+  .link-dropdown:hover .link-dropdown-content {
+    display: block;
+  }
+
+  /* --------------MORE-INFO------------- */
+
+  .moreinfo-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0px 0px;
+    grid-template-areas: 'aboutus-1 vision-2 mission-3 approach-4';
+    grid-auto-rows: auto;
+  }
+  .nested-1 {
+    grid-area: 1 / 1;
+  }
+  .nested-2 {
+    grid-area: 1 / 2;
+  }
+  .nested-3 {
+    grid-area: 1 / 3;
+  }
+  .nested-4 {
+    grid-area: 1 / 4;
+  }
+
+  /* --------------FEATURES------------- */
   .features-icons-container {
     flex-direction: row;
-    justify-content: flex-start;
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
   }
+  .features-icons-container div {
+    width: 23.8%;
+  }
+  /* --------------PAGES------------- */
+
+  #section1 {
+    padding: 0em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #section2 {
+    padding: 0em;
+    padding-top: 1em;
+    margin-bottom: 8em;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4em;
+  }
+
+  .pages-p {
+    font-size: 90%;
+  }
+
+  .pages-images {
+    width: 35%;
+  }
+  .content-1::after {
+    display: block;
+    height: 2px;
+    background-color: #a7a7a757;
+    content: '';
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3em;
+  }
+  .content-2 .split {
+    flex-direction: row-reverse;
+  }
+
   /* --------------FOOTER----------------- */
   .footer-createdby:link,
   .footer-createdby:visited {
@@ -266,5 +431,11 @@ footer {
   .footer-createdby:hover,
   .footer-createdby:active {
     color: var(--clr-accent-300);
+  }
+}
+
+@media (min-width: 50em) and (max-width: 62.5em) {
+  .pages-p {
+    font-size: 75%;
   }
 }

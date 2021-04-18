@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Gothic+A1:200,300,400,500,700&display=swap"
@@ -12,6 +13,7 @@
   </head>
   <body>
     <header class="about-header">
+        <div class="container">
         <nav>
             <a href="index.html">Home</a>
             <div class="link-dropdown">
@@ -26,15 +28,19 @@
             </div>
             <a href="#contactDiv">Contact</a>
           </nav>
+        </div>
     </header>
 
     <section id="section1">
         <div class="container">
+        <div class="content-1">
         <h2>
           About us
         </h2>
-        <img width=400 height=275 class="other-image" src="/img/aboutimage.jpeg" />
-        <p class="paragraph1">
+        <div class="split">
+        <img class="pages-images" src="/img/aboutimage.jpeg" />
+        <div>
+        <p class="pages-p">
           Global Impact Energy LLC (“GIE”) is an Independent Power Producer that
           specializes in the cleantech sector of renewable energy production and
           sustainable development on a worldwide basis. GIE is a developer of
@@ -45,12 +51,17 @@
           Biomass, and Combined Heating and Power (CHP) platforms as well as
           related sustainable technology configurations.
         </p>
+    </div>
+    </div>
+        </div>
       </div>
     </section>
     <section id="section2">
         <div class="container">
-        <img width=400 height=300 class="other-image2" src="/img/aboutimage2.jpg" />
-        <p class="paragraph2">
+        <div class="content-2">
+            <div class="split">
+        <img class="pages-images" src="/img/aboutimage2.jpg" />
+        <p class="pages-p">
           In certain renewable applications, and as requested by our
           clients/off-takers, we will incorporate and integrate innovative
           battery storage technology platforms (e.g., Lithium-Ion Multi-Cell
@@ -67,6 +78,8 @@
           best in-class utility engineering, construction and commissioning
           practices.
         </p>
+        </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -80,9 +93,9 @@
          Copyright &copy; 2021 by Global Impact Energy, LLC.
         </p>
         <div>
-          <div class="footer-createdby text-center">
-            Website Developed by Andrew Daiza
-          </div>
+            <div class="text-center">
+                <a class="footer-createdby" href="https://www.andrewdaiza.com">Website Developed by Andrew Daiza</a>
+              </div>
         </div>
       </div>
     </footer>
