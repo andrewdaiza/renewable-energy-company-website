@@ -307,14 +307,14 @@ footer {
   /* ----------------HERO--------------- */
 
   .hero-text {
-    margin-top: 1.5em;
+    margin-top: 8em;
   }
   h1 {
-    font-size: 400%;
+    font-size: 350%;
     margin-bottom: 0.2em;
   }
   .hero-text p {
-    font-size: 150%;
+    font-size: 125%;
     font-weight: 300;
   }
 
