@@ -15,7 +15,7 @@
   <body>
     <!-- Developed by Andrew Daiza -->
     <section id="hero">
-        <div class="container full-viewheight">
+        <div class="container">
         <header>
       <nav>
         <a href="#">Home</a>
@@ -46,34 +46,34 @@
             We are what is NEXT within the Renewable/Sustainable Energy Industry
           </h3>
           <div class="moreinfo-grid">
-          <div class="aboutus-1">
+          <div class="moreinfo-links aboutus-1">
             <a href="aboutus.html">
               <img class="moreinfo-images"
               src="/img/aboutimage.jpeg"
           /></a>
           </div>
-          <div class="nested-1"><a href="aboutus.html">About Us</a></div>
-          <div class="vision-2">
+          <div class="nested-1"><a class='aboutus-link' href="aboutus.html">About Us</a></div>
+          <div class="moreinfo-links vision-2">
             <a href="vision.html">
                 <img class="moreinfo-images"
                   src="/img/visionimage.jpeg"
               /></a>
           </div>
-          <div class="nested-2"><a href="vision.html">Vision</a></div>
-          <div class="mission-3">
+          <div class="nested-2"><a class='vision-link' href="vision.html">Vision</a></div>
+          <div class="moreinfo-links mission-3">
             <a href="mission.html">
                 <img class="moreinfo-images"
                   src="/img/missionimage.jpg"
               /></a>
           </div>
-          <div class="nested-3"><a href="mission.html">Mission</a></div>
-          <div class="approach-4">
+          <div class="nested-3"><a class='mission-link' href="mission.html">Mission</a></div>
+          <div class="moreinfo-links approach-4">
             <a href="approach.html">
                 <img class="moreinfo-images"
                   src="/img/approach.png"
               /></a>
           </div>
-          <div class="nested-4"><a href="approach.html">Approach</a></div>
+          <div class="nested-4"><a class='approach-link' href="approach.html">Approach</a></div>
         </div>
             </div>
         </section>
@@ -129,7 +129,7 @@
           <h2>
           Contact
           </h2>
-          <a href="mailto:gierenewables@gmail.com"></a>  Email: <a href="mailto:gierenewables@gmail.com">gierenewables@gmail.com</a>
+          Email: <a class="color-black" href="mailto:gierenewables@gmail.com">gierenewables@gmail.com</a>
         </div>
       </div>
     </div>
@@ -151,6 +151,62 @@
         </div>
       </div>
     </footer>
+    <script>
+      let aboutUs = document.querySelector('.aboutus-1');
+      let aboutLink = document.querySelector('.nested-1');
+      let vision = document.querySelector('.vision-2');
+      let visionLink = document.querySelector('.nested-2');
+      let mission = document.querySelector('.mission-3');
+      let missionLink = document.querySelector('.nested-3');
+      let approach = document.querySelector('.approach-4');
+      let approachLink = document.querySelector('.nested-4');
+
+      aboutUs.addEventListener('mouseover', aboutMouseOver);
+      aboutUs.addEventListener('mouseout', aboutMouseOut);
+      aboutLink.addEventListener('mouseover', aboutMouseOver);
+      aboutLink.addEventListener('mouseout', aboutMouseOut);
+      
+      vision.addEventListener('mouseover', visionMouseOver);
+      vision.addEventListener('mouseout', visionMouseOut);
+      visionLink.addEventListener('mouseover', visionMouseOver);
+      visionLink.addEventListener('mouseout', visionMouseOut);
+      
+      mission.addEventListener('mouseover', missionMouseOver);
+      mission.addEventListener('mouseout', missionMouseOut);
+      missionLink.addEventListener('mouseover', missionMouseOver);
+      missionLink.addEventListener('mouseout', missionMouseOut);
+      
+      approach.addEventListener('mouseover', approachMouseOver);
+      approach.addEventListener('mouseout', approachMouseOut);
+      approachLink.addEventListener('mouseover', approachMouseOver);
+      approachLink.addEventListener('mouseout', approachMouseOut);
+
+
+      function aboutMouseOver() {
+        let time = aboutUs.classList.add('moreinfo-links-hover')
+      }
+      function aboutMouseOut() {
+        let time = aboutUs.classList.remove('moreinfo-links-hover');
+      }
+      function visionMouseOver() {
+        vision.classList.add('moreinfo-links-hover')
+      }
+      function visionMouseOut() {
+        vision.classList.remove('moreinfo-links-hover')
+      }
+      function missionMouseOver() {
+        mission.classList.add('moreinfo-links-hover')
+      }
+      function missionMouseOut() {
+        mission.classList.remove('moreinfo-links-hover')
+      }
+      function approachMouseOver() {
+        approach.classList.add('moreinfo-links-hover')
+      }
+      function approachMouseOut() {
+        approach.classList.remove('moreinfo-links-hover')
+      }
+    </script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
