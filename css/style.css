@@ -60,7 +60,7 @@ h5 {
 h1 {
   margin-top: 0;
   color: var(--clr-neutral-100);
-  font-size: 150%;
+  font-size: 200%;
 }
 h2 {
   font-size: 175%;
@@ -130,6 +130,8 @@ ion-icon {
 
 .dark-blue-text {
   color: var(--clr-primary-600);
+  font-weight: bold;
+  font-style: underline;
 }
 .reduce-height {
   height: 50%;
@@ -160,7 +162,6 @@ ion-icon {
 }
 
 nav {
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -171,7 +172,8 @@ nav a {
 }
 
 .hero-text {
-  margin: 250px auto;
+  margin: 5vh auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,7 +313,11 @@ footer {
 /* ------------MEDIA-QUERIES------------- */
 /* -------------------------------------- */
 
-@media (min-width: 50em) {
+@media (min-width: 53.125em) {
+  h2 {
+    font-size: 200%;
+  }
+
   /* --------------RE-USEABLE------------- */
   .split {
     flex-direction: row;
@@ -320,6 +326,7 @@ footer {
   /* ----------------HERO--------------- */
 
   .hero-text {
+    margin: 20vh auto;
   }
   h1 {
     font-size: 350%;
@@ -471,9 +478,9 @@ footer {
     max-width: 100%;
     align-self: center;
   }
-  /* .team-john-rm-image {
+  .team-john-rm-image {
     align-self: flex-start;
-  } */
+  }
 
   /* --------------VISION------------- */
   .vision-image {
@@ -508,5 +515,11 @@ footer {
   }
   ul {
     font-size: 75%;
+  }
+  h1 {
+    font-size: 250%;
+  }
+  h3 {
+    font-size: 90%;
   }
 }

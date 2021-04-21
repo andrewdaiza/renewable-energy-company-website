@@ -118,17 +118,29 @@
     </div>
     </section>
 
-    <section id="contact">
+    <section id="global-logo">
         <div class="container">
           <center><img src="/img/GIElogo.png"></center>
         <p class="text-center">Speed &#8226; Experience &#8226; Results &#8226; Value-Added &#8226;
         Integrity &#8226; Competence &#8226; Energy-Driven
       </p>
       <center><h4>PARTNERS IN POWER AND RESPONSIBLE STEWARDS OF THE ENVIRONMENT</h4></center>
-          <div>
+      </div>
+    </section>
+      <section id="contact">
+        <div class="container">
           <h2>
           Contact
           </h2>
+          <div class="narrow">
+            <h1 class="color-black text-center">Reach Out To Us</h1>
+            <p class="text-center">
+                Happy to discuss how how our renewable energy projects can fit your needs and budget
+            </p>
+        </div>
+        <div class="text-center"><a class="color-black" href="mailto:gierenewables@gmail.com"><ion-icon name="send-outline"></a></ion-icon></div>
+        <div class=" text-center">
+          
           Email: <a class="color-black" href="mailto:gierenewables@gmail.com">gierenewables@gmail.com</a>
         </div>
       </div>
@@ -151,68 +163,13 @@
         </div>
       </div>
     </footer>
-    <script>
-      let aboutUs = document.querySelector('.aboutus-1');
-      let aboutLink = document.querySelector('.nested-1');
-      let vision = document.querySelector('.vision-2');
-      let visionLink = document.querySelector('.nested-2');
-      let mission = document.querySelector('.mission-3');
-      let missionLink = document.querySelector('.nested-3');
-      let approach = document.querySelector('.approach-4');
-      let approachLink = document.querySelector('.nested-4');
-
-      aboutUs.addEventListener('mouseover', aboutMouseOver);
-      aboutUs.addEventListener('mouseout', aboutMouseOut);
-      aboutLink.addEventListener('mouseover', aboutMouseOver);
-      aboutLink.addEventListener('mouseout', aboutMouseOut);
-      
-      vision.addEventListener('mouseover', visionMouseOver);
-      vision.addEventListener('mouseout', visionMouseOut);
-      visionLink.addEventListener('mouseover', visionMouseOver);
-      visionLink.addEventListener('mouseout', visionMouseOut);
-      
-      mission.addEventListener('mouseover', missionMouseOver);
-      mission.addEventListener('mouseout', missionMouseOut);
-      missionLink.addEventListener('mouseover', missionMouseOver);
-      missionLink.addEventListener('mouseout', missionMouseOut);
-      
-      approach.addEventListener('mouseover', approachMouseOver);
-      approach.addEventListener('mouseout', approachMouseOut);
-      approachLink.addEventListener('mouseover', approachMouseOver);
-      approachLink.addEventListener('mouseout', approachMouseOut);
-
-
-      function aboutMouseOver() {
-        let time = aboutUs.classList.add('moreinfo-links-hover')
-      }
-      function aboutMouseOut() {
-        let time = aboutUs.classList.remove('moreinfo-links-hover');
-      }
-      function visionMouseOver() {
-        vision.classList.add('moreinfo-links-hover')
-      }
-      function visionMouseOut() {
-        vision.classList.remove('moreinfo-links-hover')
-      }
-      function missionMouseOver() {
-        mission.classList.add('moreinfo-links-hover')
-      }
-      function missionMouseOut() {
-        mission.classList.remove('moreinfo-links-hover')
-      }
-      function approachMouseOver() {
-        approach.classList.add('moreinfo-links-hover')
-      }
-      function approachMouseOut() {
-        approach.classList.remove('moreinfo-links-hover')
-      }
-    </script>
+    <script src="/js/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <script src="resources/js/index.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
