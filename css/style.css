@@ -5,8 +5,8 @@
   --clr-neutral-100: #fff;
   --clr-accent-300: #64ffda;
 
-  --ff-primary: 'Gothic A1', 'Arial', sans-serif;
-  --ff-accent: 'Roboto', sans-serif;
+  --ff-primary: "Gothic A1", "Arial", sans-serif;
+  --ff-accent: "Roboto", sans-serif;
 }
 
 /* --------------------------------------- */
@@ -77,7 +77,7 @@ h3:after {
   display: block;
   height: 2px;
   background-color: #0073e0;
-  content: ' ';
+  content: " ";
   width: 100%;
   margin: 0 auto;
   margin-top: 1em;
@@ -138,6 +138,15 @@ ion-icon {
 }
 .color-black {
   color: #000;
+}
+.color-darkblue {
+  color: var(--clr-primary-900);
+}
+.font-bold {
+  font-weight: 600;
+}
+.font-underline {
+  text-decoration: underline;
 }
 /* --------------------------------------- */
 /* ----------------HERO------------------ */
@@ -214,10 +223,10 @@ nav a {
   grid-template-rows: repeat(4, 1fr);
   gap: 0px 0px;
   grid-template-areas:
-    'aboutus-1'
-    'vision-2'
-    'mission-3'
-    'approach-4';
+    "aboutus-1"
+    "vision-2"
+    "mission-3"
+    "approach-4";
   justify-items: center;
   font-weight: 900;
   font-size: 150%;
@@ -371,7 +380,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 0px 0px;
-    grid-template-areas: 'aboutus-1 vision-2 mission-3 approach-4';
+    grid-template-areas: "aboutus-1 vision-2 mission-3 approach-4";
     /* grid-auto-rows: auto; */
   }
   .nested-1 {
@@ -461,7 +470,7 @@ footer {
     display: block;
     height: 2px;
     background-color: #a7a7a757;
-    content: '';
+    content: "";
     width: 100%;
     margin: 0 auto;
     margin-top: 3em;
