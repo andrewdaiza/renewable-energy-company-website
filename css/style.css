@@ -1,11 +1,11 @@
 :root {
-  --clr-primary-900: #01193f;
+  --clr-primary-900: #01122e;
   --clr-primary-600: #022660;
   --clr-primary-400: #0073e0;
   --clr-neutral-100: #fff;
   --clr-accent-300: #64ffda;
 
-  --ff-primary: "Gothic A1", "Arial", sans-serif;
+  --ff-primary: "Spartan", sans-serif;
   --ff-accent: "Roboto", sans-serif;
 }
 
@@ -229,9 +229,9 @@ nav a {
     "approach-4";
   justify-items: center;
   font-weight: 900;
-  font-size: 150%;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
+  font-size: 175%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
 }
 
 .aboutus-1 {
@@ -306,7 +306,7 @@ footer {
   padding-bottom: 2em;
 }
 .footer-createdby {
-  font-size: 70%;
+  font-size: 60%;
   color: var(--clr-neutral-100);
 }
 
@@ -524,9 +524,6 @@ footer {
   }
   ul {
     font-size: 75%;
-  }
-  h1 {
-    font-size: 250%;
   }
   h3 {
     font-size: 90%;
